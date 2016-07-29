@@ -1,6 +1,5 @@
 var game = {
   board: [],        // this will be a 2D array of dom nodes.
-  $board: null,     // this will be a jQuery object where the board is displayed.
   currentPlayer: 'X',
 
   togglePlayer: function() {
@@ -26,12 +25,11 @@ var game = {
         $row.append($button);
       }
       this.board.push(row);
-      this.$board.append($row);
+      $("#board").append($row);
     }
   }
 };
 
 $(function() {
-  game.$board = $("#board");
   game.buildGameBoard();
 });

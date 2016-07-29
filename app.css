@@ -1,0 +1,15 @@
+* {
+  text-align: center;
+}
+
+.X {
+  color: green;
+}
+
+.O {
+  color: red;
+}
+
+button:focus {
+  outline: none;
+}

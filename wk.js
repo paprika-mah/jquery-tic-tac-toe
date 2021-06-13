@@ -96,23 +96,23 @@ var game = {
     this.showCurrentPlayer();
   },
 
-  halDynamicHTML: function() {
-    for (var r = 0; r < this.size; r++) {
-      var $row = $("<div class='row'></div>");
-      var row = [];
-      for (var c = 0; c < this.size; c++) {
-         var $button = $('<button class="btn btn-lg cell" onclick=game.move(' + r + ',' + c + ')></button>');
-         row.push($button);
-         $row.append($button);
-         console.log(row);
-         console.log($row.append);
-       }
-      this.board.push(row);
-      $("#halIdSample").append($row);
-    }
-  }
-};
-
+//  halDynamicHTML: function() {
+//    for (var r = 0; r < this.size; r++) {
+//      var $row = $("<div class='row'></div>");
+//      var row = [];
+//      for (var c = 0; c < this.size; c++) {
+//         var $button = $('<button class="btn btn-lg cell" onclick=game.move(' + r + ',' + c + ')></button>');
+//         row.push($button);
+//         $row.append($button);
+//         console.log(row);
+//         console.log($row.append);
+//       }
+//      this.board.push(row);
+//      $("#halIdSample").append($row);
+//    }
+//  }
+//};
+//
 $(function() {
   game.buildGameBoard();
   game.reset();
